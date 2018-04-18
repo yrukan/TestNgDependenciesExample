@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="thirdSuite" verbose="1">
+	<test name="SimpleGroup">
+		<groups>
+			<run>
+				<include name="Smoke1" />
+			</run>
+		</groups>
+		<packages>
+			<package name="by.htp.testng.*" />
+		</packages>
+	</test>
+</suite>
+

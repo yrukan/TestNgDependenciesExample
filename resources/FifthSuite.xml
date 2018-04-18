@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="fifthSuite" verbose="1">
+	<test name="GroupDefinition">
+		<groups>
+			<define name="positive">
+				<include name=".*.positive"></include>
+			</define>
+			<define name="smoke">
+				<include name="smoke.*"></include>
+			</define>
+			<define name="negative">
+				<include name=".*.negative"></include>
+			</define>
+			<run>
+				<include name="negative"></include>
+			</run>
+		</groups>
+		<packages>
+			<package name="by.htp.testng.*" />
+		</packages>
+	</test>
+</suite>
+
